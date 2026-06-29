@@ -37,9 +37,9 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t bk255/pdf-extractor:latest .
+          docker build -t hoonyaohong/pdf-extractor:latest .
 
       - name: Push Docker image
         if: github.event_name == 'push'
         run: |
-          docker push bk255/pdf-extractor:latest
+          docker push hoonyaohong/pdf-extractor:latest
